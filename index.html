@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorjeta tip</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <section>
+            <label for="conta">
+                digite o valor da sua conta:<input type="number" id="iconta"name="conta">
+            </label><input type="button" value="Calcular"onclick="Calcular()" >
+            <label for="gorgeta" id="Porcentagem">
+                <span>
+                    Porcentagem da gorjeta:
+                </span>
+                <input type="text"id="Porcentagem">
+            </label>
+            <div id="res">
+                <p>Valor da Gorjeta:</p> <input type="text" id="tgorgeta">
+                <p>Valor Total:</p> <input type="text" id="vt">
+            </div>
+        </section>
+    </main>
+
+    <script src="gorgeta.js"></script>
+</body>
+</html>
