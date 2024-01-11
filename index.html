@@ -17,13 +17,14 @@
                     Porcentagem da gorjeta:
                 </span>
                 <span>
-                    <br>$<input type="range" class="form-control" id="tipInput" value="0" max="100">
+                    <br>$<input type="range" class="form-control" id="tipInput" value="0" max="100" oninput="porcem()" >
+                    <span id="porcentagemDisplay">0%</span>
                 </span>
             </label>
             <hr>
             <div id="res" hidden>
-                <p>Valor da Gorjeta :</p> <input type="number" id="tgorjeta">
-                <p>Valor Total :</p> <input type="number" id="vt">
+                <p>Valor da Gorjeta :</p> <input type="text" id="tgorjeta"readonly> 
+                <p>Valor Total :</p> <input type="text" id="vt"  readonly>
             </div>
         </section>
     </main>
