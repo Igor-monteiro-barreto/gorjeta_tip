@@ -10,21 +10,24 @@
     <main>
         <section>
             <label for="conta">
-                digite o valor da sua conta:<input type="number" id="iconta"name="conta">
-            </label><input type="button" value="Calcular"onclick="Calcular()" >
+                <h1>digite o valor da sua conta:</h1><input type="number" id="iconta" placeholder="Valor da conta" >
+            </label><input type="button" value="Calcular" onclick="Calcular()">
             <label for="gorgeta" id="Porcentagem">
                 <span>
                     Porcentagem da gorjeta:
                 </span>
-                <input type="text"id="Porcentagem">
+                <span>
+                    <br>$<input type="range" class="form-control" id="tipInput" value="0" max="100">
+                </span>
             </label>
-            <div id="res">
-                <p>Valor da Gorjeta:</p> <input type="text" id="tgorgeta">
-                <p>Valor Total:</p> <input type="text" id="vt">
+            <hr>
+            <div id="res" hidden>
+                <p>Valor da Gorjeta :</p> <input type="number" id="tgorjeta">
+                <p>Valor Total :</p> <input type="number" id="vt">
             </div>
         </section>
     </main>
 
-    <script src="gorgeta.js"></script>
+    <script src="gorjeta.js"></script>
 </body>
 </html>
