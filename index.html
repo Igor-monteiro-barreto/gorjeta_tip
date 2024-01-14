@@ -10,13 +10,14 @@
     <main>
         <section>
             <label for="conta">
-                <h1>digite o valor da sua conta:</h1><input type="number" id="iconta" placeholder="Valor da conta" >
-            </label><input type="button" value="Calcular" onclick="Calcular()">
-            <label for="gorgeta" id="Porcentagem">
+                <h1>Digite o valor da sua conta:</h1><input type="number" id="iconta" placeholder="Valor da conta" >
+            </label>
+            <input type="button" value="Calcular" onclick="Calcular()" id="botao">
+            <label for="gorgeta" >
                 <span>
                     Porcentagem da gorjeta:
                 </span>
-                <span>
+                <span id="range">
                     <br>$<input type="range" class="form-control" id="tipInput" value="0" max="100" oninput="porcem()" >
                     <span id="porcentagemDisplay">0%</span>
                 </span>

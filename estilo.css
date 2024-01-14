@@ -1,7 +1,5 @@
-*{
-  margin: 0px;
-  padding: 0px;
-}
+@charset "UTF-8";
+
 #results {
     display:none;
   }
@@ -9,6 +7,7 @@
     background-color: #343a40;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+    font-weight: normal;
   }
   main{
     padding: 70px;
@@ -17,6 +16,9 @@
   section > label > h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin: 6px;
+    color: #343a40;
+    font-weight: normal;
   }
 section{
   width: 300px;
@@ -32,18 +34,43 @@ section{
 section > label >span > input#tipInput{
   margin-top: 5px;
   position: initial;
-  border: 1px solid black;
-  margin-left: 4px;
+  padding: 5px;
+  margin-left: 8px;
+  font-size: 1em;
+}
+section  > input#botao:hover{
+  background-color: #2c3331c2;
+  color: lightgray;
+}
+section > input#botao {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-size: medium;
+  font-weight: normal;
+  padding: 2px;
+  
+}
+section > div#junta{
+  display: flex; 
+  justify-content: space-between;
+}
+
+section > label > span{
+  padding: 5px;
+  color: #343a40;
   
 }
 
-section > input{
-  border-radius: 3px;
-  padding: 1px;
+section > label > input{
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 0.8em;
+ 
 }
 
 hr{
-  margin: 5px;
+  margin: 3px;
 }
 
 section > div{
